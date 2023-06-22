@@ -5,9 +5,6 @@
     font-family: sans-serif;
 }
 
-body {
-}
-
 .container {
     margin: 80px auto;
     max-width: 640px;
@@ -39,4 +36,19 @@ button {
 
 button:hover {
     background-color: #27ae60;
+}
+
+.success-mensage {
+    background-color: #27ae60;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    display: none;
+}
+
+.error-mensage {
+    padding: 2px;
+    margin-bottom: 8px;
+    color: red;
+    display: none;
 }
