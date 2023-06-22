@@ -12,11 +12,16 @@ const form = document.getElementById('form-name');
         const nomeBeneficiario = document.getElementById('nome-beneficiario');
         const numeroContaBeneficiario = document.getElementById('num-conta');
         const valorDeposito = document.getElementById('valor-deposito');
-        const menssagem = `Montante de: ${valorDeposito.value} depositado na conta do cliente: ${nomeBeneficiario.value} - Conta: ${numeroContaBeneficiario.value}`;
+        const descricao = document.getElementById('descricao');
+        const menssagem = `Montante de: R$${valorDeposito.value} depositado na conta do cliente: ${nomeBeneficiario.value} - Conta: ${numeroContaBeneficiario.value}`;
         
         formIsValid = validarNome(nomeBeneficiario.value)
         if(formIsValid) {
             alert(menssagem)
+            nomeBeneficiario.value = '';
+            numeroContaBeneficiario.value = '';
+            valorDeposito.value = '';
+            descricao.value = '';
         } else {
             alert('Escreva seu no completo')
         }
